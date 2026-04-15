@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Compiled binaries
+*.exe
+*.pdb
+*.obj
+*.ilk
+
+# OS
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Debug artifacts
+vc*.pdb
+*.ilk
+*.obj
+*.exe
+!samples/**/*.exe
+
+# Symbols cache
+C:\Symbols/
+
+# uv
+uv.lock
+
+# pytest
+.pytest_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+assets/
