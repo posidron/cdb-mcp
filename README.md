@@ -1,11 +1,10 @@
 # CDB MCP Server
 
-An MCP (Model Context Protocol) server that wraps **CDB.exe** (the Windows command-line debugger) to enable **AI-assisted interactive debugging**. Point it at a crashing binary and a testcase, then let an LLM drive the debugger to find the root cause.
+An MCP (Model Context Protocol) server that wraps **CDB.exe** (the Windows command-line debugger) to enable **AI-assisted interactive debugging**. Whether you're triaging a crash, analyzing a dump file, reverse-engineering a binary, or investigating a hang — point it at a target and let an LLM drive the debugger.
 
 ![CDB MCP Server](assets/infographic.png)
 
 - [CDB MCP Server](#cdb-mcp-server)
-  - [Why?](#why)
   - [Prerequisites](#prerequisites)
   - [Installation](#installation)
   - [MCP Client Configuration](#mcp-client-configuration)
@@ -29,17 +28,6 @@ An MCP (Model Context Protocol) server that wraps **CDB.exe** (the Windows comma
   - [Environment Variables](#environment-variables)
   - [Security Notes](#security-notes)
 
-
-## Why?
-
-When your fuzzer finds a crash, the debugging workflow is predictable but tedious:
-1. Launch the binary under a debugger with the crash input
-2. Run `!analyze -v`
-3. Inspect the stack, registers, memory around the fault
-4. Trace backward to find the root cause
-5. Classify the vulnerability
-
-This MCP server makes every one of those steps available as tools that an LLM can call — turning crash triage into a conversation.
 
 ## Prerequisites
 
