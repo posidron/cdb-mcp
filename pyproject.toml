@@ -15,5 +15,5 @@ dependencies = [
 cdb-mcp = "cdb_mcp:mcp.run"
 
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
+requires = ["hatchling"]
+build-backend = "hatchling.build"

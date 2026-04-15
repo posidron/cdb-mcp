@@ -11,7 +11,7 @@ An MCP (Model Context Protocol) server that wraps **CDB.exe** (the Windows comma
   - [MCP Client Configuration](#mcp-client-configuration)
     - [Claude Desktop (`claude_desktop_config.json`)](#claude-desktop-claude_desktop_configjson)
     - [VS Code / Claude Code (`.mcp.json`)](#vs-code--claude-code-mcpjson)
-    - [Using `uv` (recommended for isolation)](#using-uv-recommended-for-isolation)
+    - [Using `uv` (recommended)](#using-uv-recommended)
   - [Available Tools (28)](#available-tools-28)
     - [Session Management](#session-management)
     - [Execution Control](#execution-control)
@@ -50,8 +50,8 @@ This MCP server makes every one of those steps available as tools that an LLM ca
 ## Installation
 
 ```bash
-cd cdb_mcp
-pip install -e .
+pip install uv  # if you don't have uv yet
+uv pip install -e .
 ```
 
 ## MCP Client Configuration
@@ -89,11 +89,9 @@ pip install -e .
 }
 ```
 
-### Using `uv` (recommended for isolation)
+### Using `uv` (recommended)
 
-```bash
-pipx install uv
-```
+Run directly without installation:
 
 ```json
 {
