@@ -53,5 +53,3 @@ uv.lock
 htmlcov/
 .coverage
 coverage.xml
-
-assets/

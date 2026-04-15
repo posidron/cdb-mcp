@@ -2,6 +2,8 @@
 
 An MCP (Model Context Protocol) server that wraps **CDB.exe** (the Windows command-line debugger) to enable **AI-assisted interactive debugging**. Point it at a crashing binary and a testcase, then let an LLM drive the debugger to find the root cause.
 
+![CDB MCP Server](assets/infographic.png)
+
 - [CDB MCP Server](#cdb-mcp-server)
   - [Why?](#why)
   - [Prerequisites](#prerequisites)
